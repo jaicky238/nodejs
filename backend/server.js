@@ -5,4 +5,6 @@ const port = process.env.port || 5000;
 
 const server  = http.createServer(app);
 
-server.listen(port);
+server.listen(port,function(){
+    console.log("server running on 5000");
+});
